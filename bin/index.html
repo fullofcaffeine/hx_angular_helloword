@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World!</title>
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-route.js"></script>
+    <script src="./app.js"></script>
+
+  </head>
+  <body ng-app="HxAngularHelloWorld" ng-controller="FooController">
+    <h1>{{data.foo}}</h1>
+    <a href ng-click="openAbout()">About</a>
+
+    <ng-view></ng-view>
+    <news></news>
+
+    <script type="text/ng-template" id="about.html">
+      Caffeine-Powered awesomeness
+      {{hai}}
+    </script>
+  </body>
+</html>

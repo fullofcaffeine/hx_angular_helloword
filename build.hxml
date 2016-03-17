@@ -1,0 +1,11 @@
+-cp src/haxe
+-D js-es5
+-lib angular.haxe
+-dce full
+-main App
+-js bin/app.js
+--next
+-cp src/haxe
+-main Server
+-lib monsoon-embed
+-neko bin/server.n
